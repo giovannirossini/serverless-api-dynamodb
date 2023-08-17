@@ -11,9 +11,11 @@ def handler(event, context):
         item_id = int(table.scan()["Count"] + 1)
 
         item = {
-            "id": item_id,
-            "data": request_body.get("data", "")
+            "id": item_id
         }
+
+        for key, value in request_body.items():
+            item[key] = value
 
         table.put_item(Item=item)
 

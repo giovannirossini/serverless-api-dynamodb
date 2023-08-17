@@ -28,6 +28,10 @@ This project showcases the following features:
 - AWS API Gateway
 - AWS Lambda
 - AWS DynamoDB
+- AWS IAM
+- AWS CloudWatch
+- AWS SNS
+- AWS S3
 - Terraform (IaC)
 
 ## Getting Started
@@ -72,13 +76,10 @@ To use the API, make a POST request to the provided API endpoint URL. The Lambda
 Example request using `curl`:
 
 ```sh
-curl -X POST -d '{"data": "my data"}' <API_ENDPOINT_URL>
+curl -X POST -d '{"Username": "John Doe"}' <API_ENDPOINT_URL>
 ```
 
 ## Screenshots
-
-- **API Gateway Configuration:**
-  ![API Gateway Configuration](screenshots/api_gateway.png)
 
 - **Project Architecture:**
   ![Project Architecture](screenshots/architecture.png)

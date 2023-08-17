@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "bucket_lambda" {
-  bucket = "${var.name}-test-bucket"
+  bucket_prefix = var.name
 
   tags = {
     Name = var.name

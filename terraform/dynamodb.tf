@@ -4,6 +4,6 @@ resource "aws_dynamodb_table" "my_dynamodb_table" {
   hash_key     = "id"
   attribute {
     name = "id"
-    type = "S"
+    type = "N"
   }
 }
